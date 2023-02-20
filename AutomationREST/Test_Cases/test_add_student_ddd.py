@@ -7,7 +7,7 @@ from DDD import library
 #testcase1
 def test_add_multiple_students():
     api_url ="https://thetestingworldapi.com/api/studentsDetails"
-    f =open("..\\AutomationREST\\json_data\\newstudent.json")
+    f =open("../AutomationREST/json_data/newstudent.json")
     json_request = json.loads(f.read())
 
     
