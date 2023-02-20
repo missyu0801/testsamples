@@ -7,11 +7,11 @@ from DDD import library
 #testcase1
 def test_add_multiple_students():
     api_url ="https://thetestingworldapi.com/api/studentsDetails"
-    f =open("../json_data/newstudent.json")
+    f =open("..\\AutomationREST\\json_data\\newstudent.json")
     json_request = json.loads(f.read())
 
     
-    obj =library.Common("../xls_data/student.xlsx", "Sheet1")
+    obj =library.Common("..\\AutomationREST\\xls_data\\student.xlsx", "Sheet1")
     col = obj.fetch_colm_count()
     row = obj.fetch_row_count()
     key_list =obj.fetch_key_names()

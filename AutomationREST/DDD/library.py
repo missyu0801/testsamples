@@ -3,7 +3,7 @@ import json
 import jsonpath
 import openpyxl
 
-wb = openpyxl.load_workbook("../xls_data/student.xlsx")
+
 class Common:
     def __init__(self,filenamepath, sheetname):
         global wb
